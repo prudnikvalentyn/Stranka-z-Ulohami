@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulár</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 550px;
+      margin: 0 auto;
+      border: 1px solid #555;
+      background-color: #F8F8FF	;
+      padding: 10px;
+      margin-top: 2%;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 5px;
+    }
+    .actions {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+      <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="navigation_container">
+    <nav class="tasks_navigation">
+        <a class="a_task" href="index.html">Stránka s úlohami</a>
+        <a class="a_task" href="boeing-747.html">Úloha 1: Boeing-747</a>
+        <a class="a_task" href="algoritms.html">Úloha 2: Algoritmy</a>
+        <a class="a_task" href="cv.html">Úloha 3: Zhrnutie</a>
+        <a class="a_task" href="prudnik formular.html">Úloha 4: Formular</a>
+    </nav>
+<div class="container">
+  <form action="formulare.php" method="post">
+    <table border="1">
+      <tr>
+        <td>Meno a Priezvesko:</td>
+        <td><input type="text" name="meno" value=""></td>
+        <td>Telefone čislo:</td>
+        <td><input type="text" name="heslo" value=""></td>
+      </tr>
+        <td>email:</td>
+        <td><input type="text" name="Email" value=""></td>
+        <td>O sebe:</td>
+        <td><input type="text" name="o sebe" value=""></td>
+      <tr>
+        <td>
+        <td>
+          <input type="radio" name="gender" value="male"> male
+          <input type="radio" name="gender" value="female"> female
+        </td>
+        <td>Trieda</td>
+        <td>
+          <select name="špecializácia">
+           
+              <option>vodic</option>
+              <option>referent</option>
+              <option>pilot</option>
+              <option>letuska</option>
+            
+            
+              <option>ohchrana letiska</option>
+              <option>sekretarka</option>
+              <option>predavac</option>
+              <option>vedúci oddelenia</option>
+            
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Jazyky</td>
+        <td colspan="3">
+          <input type="checkbox" name="jazyky" value="ENG"> ENG
+          <input type="checkbox" name="jazyky" value="RUS"> RUS
+          <input type="checkbox" name="jazyky" value="UKR"> UKR
+          <input type="checkbox" name="jazyky" value="SVK"> SVK
+        </td>
+      </tr>
+      <tr>
+        <td>Pripomienky</td>
+        <td colspan="3">
+          <textarea name="pripomienky" rows="3" cols="30"></textarea>
+        </td>
+      </tr>
+    </table>
+    <div class="actions">
+      <input type="reset" value="Vymazať">
+      <input type="submit" value="Odoslať">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
